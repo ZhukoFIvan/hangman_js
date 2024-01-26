@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+}
+ul {
+	list-style-type: none;
+	display: flex;
+	gap: 10px;
+	margin-bottom: 40px;
+}
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #3e503c;
+	min-height: 100vh;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	padding: 60px;
+	border-radius: 10px;
+	max-width: 900px;
+	width: 100%;
+}
+.hangman_box img {
+	margin-bottom: 30px;
+}
+.game_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width:400px;
+	align-items: center;
+}
+.letter {
+	width: 27px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 500;
+	border-bottom: 4px solid black;
+}
+.hint_text {
+	margin-bottom: 30px;
+}
+.attempt_text span {
+	color: red;
+	margin-bottom: 30px;
+}
+.keyboard {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin-top: 30px;
+
+}
+.keyboard button {
+	border: none;
+	outline: none;
+	background-color: #ff6f3d;
+	padding: 10px 0;
+	min-width: 40px;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.keyboard button.active{
+	background-color: #7f886a;
+}
+
+.keyboard button:hover {
+	opacity: 0.7;
+}
+
+.modal {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: none;
+	z-index: 999;
+	align-items: center;
+	justify-content: center;
+}
+.show{
+	display: flex;
+	
+}
+
+.modal_content {
+	background-color: #f3ecdb;
+	width: 600px;
+	height: 400px;
+	padding: 60px;
+	border-radius: 10px;
+	text-align: center;
+	justify-content: center;
+}
+.modal_content img {
+	margin-bottom: 30px;
+	width: 150px;
+	height: 150px;
+}
+.modal_content h4 {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.modal_content p {
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+.modal_content button {
+	border: none;
+	outline: none;
+	background-color: #ff6f3d;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 5px;
+	cursor: pointer;
+}
